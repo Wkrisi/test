@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELVET & BLOOM | Intimate Luxury</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cursor follower -->
+    <div class="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-left">
+            <a href="#" class="nav-link">Shop</a>
+            <a href="#" class="nav-link">Collections</a>
+            <a href="#" class="nav-link">About</a>
+        </div>
+        <a href="#" class="logo">
+            <span class="logo-main">VELVET & BLOOM</span>
+            <span class="logo-sub">Intimate Luxury</span>
+        </a>
+        <div class="nav-right">
+            <a href="#" class="nav-link">Journal</a>
+            <a href="#" class="nav-link">Account</a>
+            <a href="#" class="nav-link cart-link">
+                Cart <span class="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <p class="hero-overline">The Art of Intimacy</p>
+            <h1 class="hero-title">
+                <span>Pleasure</span>
+                <span>Refined</span>
+            </h1>
+            <p class="hero-description">
+                Thoughtfully designed intimate products crafted from premium, body-safe materials. 
+                Experience luxury that celebrates your body.
+            </p>
+            <a href="#products" class="hero-cta">
+                <span>Explore Collection</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+            </a>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Features Strip -->
+    <section class="features-strip">
+        <div class="feature">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            <span>100% Body-Safe Materials</span>
+        </div>
+        <div class="feature">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M20 7L12 3L4 7M20 7L12 11M20 7V17L12 21M12 11L4 7M12 11V21M4 7V17L12 21" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            <span>Discreet Packaging</span>
+        </div>
+        <div class="feature">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            <span>Free Express Shipping</span>
+        </div>
+        <div class="feature">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            <span>1-Year Warranty</span>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="section-header">
+            <p class="section-overline">Curated Selection</p>
+            <h2 class="section-title">Bestsellers</h2>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="category-filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="vibrators">Vibrators</button>
+            <button class="filter-btn" data-category="dildos">Dildos</button>
+            <button class="filter-btn" data-category="couples">Couples</button>
+            <button class="filter-btn" data-category="accessories">Accessories</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <article class="product-card" data-category="vibrators">
+                <div class="product-image">
+                    <div class="product-placeholder" style="--hue: 340;">
+                        <div class="placeholder-shape"></div>
+                    </div>
+                    <div class="product-badges">
+                        <span class="badge bestseller">Bestseller</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="action-btn quick-view" data-product="1">Quick View</button>
+                        <button class="action-btn add-to-cart" data-product="1">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Aurora Wand</h3>
+                    <p class="product-desc">Silicone | 7 Patterns | Rechargeable</p>
+                    <p class="product-price">$89.00</p>
+                </div>
+            </article>
+
+            <!-- Product 2 -->
+            <article class="product-card" data-category="dildos">
+                <div class="product-image">
+                    <div class="product-placeholder" style="--hue: 280;">
+                        <div class="placeholder-shape shape-2"></div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="action-btn quick-view" data-product="2">Quick View</button>
+                        <button class="action-btn add-to-cart" data-product="2">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Silk Curve</h3>
+                    <p class="product-desc">Medical-Grade Silicone | Ergonomic</p>
+                    <p class="product-price">$68.00</p>
+                </div>
+            </article>
+
+            <!-- Product 3 -->
+            <article class="product-card" data-category="vibrators">
+                <div class="product-image">
+                    <div class="product-placeholder" style="--hue: 20;">
+                        <div class="placeholder-shape shape-3"></div>
+                    </div>
+                    <div class="product-badges">
+                        <span class="badge new">New</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="action-btn quick-view" data-product="3">Quick View</button>
+                        <button class="action-btn add-to-cart" data-product="3">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Petal Touch</h3>
+                    <p class="product-desc">Air Pulse Technology | Whisper Quiet</p>
+                    <p class="product-price">$129.00</p>
+                </div>
+            </article>
+
+            <!-- Product 4 -->
+            <article class="product-card" data-category="dildos">
+                <div class="product-image">
+                    <div class="product-placeholder" style="--hue: 200;">
+                        <div class="placeholder-shape shape-4"></div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="action-btn quick-view" data-product="4">Quick View</button>
+                        <button class="action-btn add-to-cart" data-product="4">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Ocean Wave</h3>
+                    <p class="product-desc">Glass | Temperature Play | Artisan</p>
+                    <p class="product-price">$95.00</p>
+                </div>
+            </article>
+
+            <!-- Product 5 -->
+            <article class="product-card" data-category="couples">
+                <div class="product-image">
+                    <div class="product-placeholder" style="--hue: 320;">
+                        <div class="placeholder-shape shape-5"></div>
+                    </div>
+                    <div class="product-badges">
+                        <span class="badge bestseller">Bestseller</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="action-btn quick-view" data-product="5">Quick View</button>
+                        <button class="action-btn add-to-cart" data-product="5">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Duo Bliss</h3>
+                    <p class="product-desc">Couples Vibrator | App-Controlled</p>
+                    <p class="product-price">$149.00</p>
+                </div>
+            </article>
+
+            <!-- Product 6 -->
+            <article class="product-card" data-category="accessories">
+                <div class="product-image">
+                    <div class="product-placeholder" style="--hue: 45;">
+                        <div class="placeholder-shape shape-6"></div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="action-btn quick-view" data-product="6">Quick View</button>
+                        <button class="action-btn add-to-cart" data-product="6">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Velvet Care Kit</h3>
+                    <p class="product-desc">Cleanser | Storage | Renewal Powder</p>
+                    <p class="product-price">$45.00</p>
+                </div>
+            </article>
+        </div>
+
+        <a href="#" class="view-all-link">
+            <span>View All Products</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+        </a>
+    </section>
+
+    <!-- Editorial Section -->
+    <section class="editorial">
+        <div class="editorial-content">
+            <p class="editorial-overline">Our Philosophy</p>
+            <h2 class="editorial-title">Designed for<br>Your Body</h2>
+            <p class="editorial-text">
+                Every product in our collection is thoughtfully engineered with your pleasure and safety in mind. 
+                We use only premium, body-safe materials—medical-grade silicone, borosilicate glass, and 
+                stainless steel—ensuring each piece is as beautiful as it is functional.
+            </p>
+            <p class="editorial-text">
+                Our designs are developed in collaboration with sexual wellness experts, 
+                combining ergonomic research with aesthetic elegance.
+            </p>
+            <a href="#" class="editorial-link">Learn More About Our Process</a>
+        </div>
+        <div class="editorial-visual">
+            <div class="visual-circle"></div>
+            <div class="visual-circle"></div>
+            <div class="visual-circle"></div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2 class="newsletter-title">Join the Bloom</h2>
+            <p class="newsletter-text">
+                Subscribe for exclusive offers, new releases, and intimate wellness insights.
+            </p>
+            <form class="newsletter-form" id="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">
+                    <span>Subscribe</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </button>
+            </form>
+            <p class="newsletter-privacy">We respect your privacy. Unsubscribe anytime.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <span class="footer-logo">VELVET & BLOOM</span>
+                <p class="footer-tagline">Intimate luxury, thoughtfully crafted.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Shop</h4>
+                    <a href="#">All Products</a>
+                    <a href="#">Vibrators</a>
+                    <a href="#">Dildos</a>
+                    <a href="#">Couples</a>
+                    <a href="#">Accessories</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Our Materials</a>
+                    <a href="#">Journal</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <a href="#">Contact</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Returns</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Velvet & Bloom. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Age Verification</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quick View Modal -->
+    <div class="modal-overlay" id="quick-view-modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <div class="product-placeholder modal-placeholder" style="--hue: 340;">
+                        <div class="placeholder-shape"></div>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <h2 class="modal-title">Aurora Wand</h2>
+                    <p class="modal-price">$89.00</p>
+                    <p class="modal-description">
+                        Experience waves of pleasure with our bestselling Aurora Wand. 
+                        Crafted from ultra-soft, body-safe silicone with 7 customizable vibration patterns 
+                        and a whisper-quiet motor.
+                    </p>
+                    <ul class="modal-features">
+                        <li>Medical-grade silicone</li>
+                        <li>7 vibration patterns</li>
+                        <li>USB rechargeable</li>
+                        <li>Waterproof (IPX7)</li>
+                        <li>2-hour battery life</li>
+                    </ul>
+                    <div class="modal-actions">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus">−</button>
+                            <span class="qty-value">1</span>
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                        <button class="modal-add-cart">Add to Cart — $89.00</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <aside class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="cart-close">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <p class="cart-empty">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-subtotal">
+                <span>Subtotal</span>
+                <span class="subtotal-amount">$0.00</span>
+            </div>
+            <p class="cart-shipping">Shipping calculated at checkout</p>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </aside>
+
+    <!-- Age Verification Modal -->
+    <div class="age-modal" id="age-modal">
+        <div class="age-modal-content">
+            <div class="age-modal-brand">VELVET & BLOOM</div>
+            <h2>Age Verification Required</h2>
+            <p>You must be 18 years or older to enter this website.</p>
+            <div class="age-modal-actions">
+                <button class="age-btn confirm" id="age-confirm">I am 18 or older</button>
+                <button class="age-btn deny" id="age-deny">I am under 18</button>
+            </div>
+            <p class="age-modal-note">By entering, you agree to our Terms of Service and Privacy Policy.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
